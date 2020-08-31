@@ -40,7 +40,7 @@ full = 0
 empty = N
 互斥变量
 mutex
-
+```cpp
 void preducer
 {
     p(empty);
@@ -58,10 +58,11 @@ void consumer
     mutex.unlock();
     v(empty);
 }
+```
 #### 条件变量
 互斥变量 mutex
 条件变量 cond
-
+```cpp
 void preduce 
 {
     mutex.lock();
@@ -80,6 +81,7 @@ void consumer
     //reduce
     mutex.unlock();
 }
+```
 ### CPP
 C++11多线程有了一定更新，包括
 std::thread
